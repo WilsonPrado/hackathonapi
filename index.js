@@ -9,8 +9,13 @@ const app = express();
 /** 
  * Função que busca as anomalias na API, grava no banco os ataques e retorna para o usuário;
 */
-app.get('/api/', (req, res) => {
-    
+app.get('/teste', (req, res) => {
+    res.status(200).send({
+      status: 200,
+      data: {
+        oi: "batata"
+      }
+    })
 });
 
 /**
